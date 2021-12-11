@@ -14,9 +14,9 @@ $(document).ready(function(){
             $.get("https://sarav22.github.io/personalWebPage2/"+htmls[i], function(data){
                 
                 var result= $(fileDom+":contains("+buscando+")");
-                var result2= fileDom.$(":contains("+buscando+")");
+               // var result2= fileDom.$(":contains("+buscando+")");
                 console.log(result);
-                console.log(result2);
+              //  console.log(result2);
 
                 var fileDom = $(data);
                 fileDom.find('h2').each(function(){
