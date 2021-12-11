@@ -15,9 +15,11 @@ $(document).ready(function(){
                 $(data).ready(function(){
                     var result= $("*:contains("+buscando+")");
                     //Se guardan los resultados en un array y las url de dichos resultados
+                    console.log(result);
                     for(var j=0; j<result.length; j++){
                         if(result[j].localName=="p"|| result[j].localName == "h1"|| result[j].localName == "h2"|| result[j].localName == "h3" || result[j].localName=="table"){
                             searches.push(result[j].innerHTML);
+                            console.log(result[j].innterHTML)
                             urls.push(htmls[i]);
                         }
                     }
