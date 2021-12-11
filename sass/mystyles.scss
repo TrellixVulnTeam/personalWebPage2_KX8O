@@ -28,6 +28,10 @@ $input-shadow: none;
 a:hover{
     text-decoration: underline;
 }
+a.has-text-white:hover{
+    text-decoration: underline;
+    color:#35373a;
+}
 a.is-hovered{
     background-color: darken($primary, 8%);
 }
