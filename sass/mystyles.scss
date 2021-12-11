@@ -29,8 +29,7 @@ a:hover{
     text-decoration: underline;
 }
 a.has-text-white:hover{
-    text-decoration: underline;
-    color:#35373a;
+    background-color: darken($primary, 2%);
 }
 a.is-hovered{
     background-color: darken($primary, 8%);

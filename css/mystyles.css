@@ -2,8 +2,7 @@ a:hover {
   text-decoration: underline; }
 
 a.has-text-white:hover {
-  text-decoration: underline;
-  color: #35373a; }
+  background-color: #303235; }
 
 a.is-hovered {
   background-color: #222325; }
