@@ -42,6 +42,6 @@ $(document).ready(function(){
         localStorage.setItem("searches", searchesParsed);
         localStorage.setItem("urls", urlsParsed);
         //Se redirige a la página donde se mostrarán los resultados encontrados
-        window.location.href = "resultado.html";
+       // window.location.href = "resultado.html";
     });
 });
