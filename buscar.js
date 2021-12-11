@@ -13,12 +13,12 @@ $(document).ready(function(){
         for(var i=0; i < htmls.length; i++){
             $.get("https://sarav22.github.io/personalWebPage2/"+htmls[i], function(data){
                 
-                var result= fileDom.val();
-               // var result2= fileDom.$(":contains("+buscando+")");
-                console.log(result);
-              //  console.log(result2);
-
                 var fileDom = $(data);
+                var result= fileDom.val();
+               var result2= fileDom.$(":contains("+buscando+")");
+                console.log(result);
+                console.log(result2);
+
                 fileDom.find('h2').each(function(){
                     console.log($(this).text());
 
