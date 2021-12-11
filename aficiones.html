@@ -20,21 +20,22 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu has-background-primary">
             <div class="navbar-start">
-                <a class="navbar-item" href="index.html">Página principal</a>
-                <a class="navbar-item" href="aficiones.html">Aficiones</a>
-                <a class="navbar-item" href="musica.html">Música</a>
-                <a class="navbar-item" href="libros.html">Libros</a>
+                <a class="navbar-item has-text-white" href="index.html">Página principal</a>
+                <a class="navbar-item has-text-white" href="aficiones.html">Aficiones</a>
+                <a class="navbar-item has-text-white" href="musica.html">Música</a>
+                <a class="navbar-item has-text-white" href="libros.html">Libros</a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item field">
                     <div class="field has-addons">
                         <div class="control">
-                          <input class="input buscar" type="text" placeholder="Buscar...">
+                          <label for="buscar" hidden>Buscar:</label>
+                          <input class="input buscar" name="buscar" type="text" placeholder="Buscar...">
                         </div>
                         <div class="control">
-                          <a class="button is-info has-text-dark buttonBuscar">
+                          <a class="button is-link has-text-dark buttonBuscar">
                             Buscar
                           </a>
                         </div>
@@ -43,7 +44,6 @@
             </div>
         </div>
     </nav>
-    
     <header class="header has-background-primary level py-5">
         <h1 class="title is-1 has-text-white level-item has-text-centered">Mis aficiones</h1>
     </header>
