@@ -4,7 +4,7 @@ $(document).ready(function(){
     var buttonBuscar = document.querySelector('.buttonBuscar');
     //Se añade el onClick al botón de buscar
     buttonBuscar.addEventListener('click', function () {
-        $.get("file:///C:/Users/sveci/OneDrive/Escritorio/MIW/UAAW/PersonalWebPageBulma/aficiones.html", function(data){
+        $.get("https://sarav22.github.io/personalWebPage2/musica.html", function(data){
             var fileDom = $(data);
             fileDom.find('h2').each(function(){
                 console.log($(this).text());
