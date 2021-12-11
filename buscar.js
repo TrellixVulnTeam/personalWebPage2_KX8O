@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    var htmls = ["musica.html", "index.html", "libros.html", "aficiones.html"];
     var buttonBuscar = document.querySelector('.buttonBuscar');
-
     //Se añade el onClick al botón de buscar
     buttonBuscar.addEventListener('click', function () {
         var buscando = $('.buscar').val();
@@ -9,38 +7,40 @@ $(document).ready(function(){
         var urls=[];
         var searchesParsed="";
         var urlsParsed="";
-
-        for(var i=0; i < htmls.length; i++){
-            $.get("https://sarav22.github.io/personalWebPage2/"+htmls[i], function(data){
-                $(data).ready(function(){
-                    var result= $("*:contains("+buscando+")");
-                    //Se guardan los resultados en un array y las url de dichos resultados
-                    console.log(result);
-                    for(var j=0; j<result.length; j++){
-                        if(result[j].localName=="p"|| result[j].localName == "h1"|| result[j].localName == "h2"|| result[j].localName == "h3" || result[j].localName=="table"){
-                            searches.push(result[j].innerHTML);
-                            console.log(result[j].innterHTML)
-                            urls.push(htmls[i]);
-                        }
-                    }
-                });
-            });
-        }
+        $.get("https://sarav22.github.io/personalWebPage2/search.xml", function(data){
+            var result= $(data).find(":contains("+buscando+")");
+            var html="";
+            for(var i=0; i<result.length; i++){
+                if($(result[i]).attr("name") != undefined){
+                    html=$(result[i]).attr("name");
+                }
+                if(result[i].localName=="p"|| result[i].localName == "h1"|| result[i].localName == "h2"|| result[i].localName == "h3" || result[i].localName=="table"){
+                   console.log(result)
+                    searches.push(result[i].innerHTML);
+                    urls.push(html);
+                }
+            } 
+            for(var i=0; i<searches.length; i++){
+                if(i==searches.length-1){
+                    searchesParsed= searchesParsed + searches[i];
+                    urlsParsed= urlsParsed + urls[i];
+                }else{
+                    searchesParsed= searchesParsed + searches[i] + ";";
+                    urlsParsed= urlsParsed + urls[i] + ";";
+                }
+            }
+            localStorage.setItem("busqueda", buscando);
+            localStorage.setItem("searches", searchesParsed);
+            localStorage.setItem("urls", urlsParsed);
+            window.location.href = "resultado.html";
+           
+        });
         //Se pasan los resultados encontrados a una string separada por ; para poder parsearla posteriormente
         //ya que la que se genera por defecto es con , y no se parsearía porque el texto contiene comas.
-        for(var i=0; i<searches.length; i++){
-            if(i==searches.length-1){
-                searchesParsed= searchesParsed + searches[i];
-                urlsParsed= urlsParsed + urls[i];
-            }else{
-                searchesParsed= searchesParsed + searches[i] + ";";
-                urlsParsed= urlsParsed + urls[i] + ";";
-            }
-        }
+        
+       
         //Se guardan en localStorage las variables
-        localStorage.setItem("busqueda", buscando);
-        localStorage.setItem("searches", searchesParsed);
-        localStorage.setItem("urls", urlsParsed);
+        
         //Se redirige a la página donde se mostrarán los resultados encontrados
        // window.location.href = "resultado.html";
     });
