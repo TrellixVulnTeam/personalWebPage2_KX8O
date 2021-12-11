@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" class="has-navbar-fixed-top"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="buscar.js"></script>
+    <script src="hover.js"></script>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Mi web personal - Sara Vecino García</title>
+</head>
+<body>
+    <nav class="navbar is-primary is-fixed-top" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger"  aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Página principal</a>
+                <a class="navbar-item" href="aficiones.html">Aficiones</a>
+                <a class="navbar-item" href="musica.html">Música</a>
+                <a class="navbar-item" href="libros.html">Libros</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item field">
+                    <div class="field has-addons">
+                        <div class="control">
+                          <input class="input buscar" type="text" placeholder="Buscar...">
+                        </div>
+                        <div class="control">
+                          <a class="button is-link has-text-dark buttonBuscar">
+                            Buscar
+                          </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header has-background-primary level py-5">
+        <h1 class="title is-1 level-item has-text-white has-text-centered">Sara Vecino García</h1>
+    </header>
+    <main class="container">
+        <section class="section columns is-desktop">
+            <div class="column">
+                <h2 class="subtitle is-2">Información personal</h2>
+                <div class="columns">
+                    <p class="column">Me llamo Sara Vecino García, tengo 22 años, y soy una estudiante del Máster Universitario en Ingeniería Web en la Escuela de Ingeniería Informática de la Universidad de Oviedo. <br><br>Mis intereses son el desarrollo web y la docencia e investigación, razones por las que elegí este máster en la modalidad de Investigación.</p>
+                    <div class="column"> 
+                        <img  class="image" width="224" src="resources/foto.jpg" alt="Fotografía de Sara Vecino García"/>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="subtitle is-2">Información académica y profesional</h2>
+            <h3 class="subtitle is-3">Información académica</h3>
+            <ul>
+                <li>Grado en Ingeniería Informática del Software - Universidad de Oviedo</li>
+                <li>Grado medio en Piano - Conservatorio de música de Oviedo</li>
+            </ul>
+            <h3 class="subtitle is-3">Información profesional</h3>
+            <p>He hecho las prácticas de empresa y el TFG con el grupo de investigación HCI Research Group que pertenece a Computational Reflection de la Universidad de Oviedo.</p>
+        </section>
+        <section class="section">
+            <h2 class="subtitle is-2">Modo de contacto</h2>
+            <p>Correo electrónico: <strong><a class="has-text-danger" href="mailto:UO264093@uniovi.es">UO264093@uniovi.es</a></strong></p>
+        </section>
+        <section class="section">
+            <h2 class="subtitle is-2">¡Conóceme mejor!</h2>
+            <p>Haz click aquí para leer sobre mis <strong><a class="has-text-danger" href="aficiones.html">aficiones</a></strong>.</p>  
+        </section>
+    </main>
+    <footer class="footer has-background-info">
+        <h2 class="title is-2">Créditos</h2>
+        <p>Iconos de <strong><a class="has-text-danger" href="https://fontawesome.com/license">Font Awesome</a></strong></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// Brand colors
+$grey: #2B2B2B;
+$linkcolor:  #b5d5f3;
+$linkcolor-darker:  #013A6F;
+$background:  #35373a;
+$beige-lighter: #f3f1eb;
+
+// Bulma's global variables
+$grey-dark: $grey;
+$grey-light: $grey;
+$white: $beige-lighter;
+$light: $background;
+$danger: $linkcolor-darker;
+$info: $linkcolor;
+$primary: $background;
+$link: $linkcolor;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+a:hover{
+    text-decoration: underline;
+}
+a.is-hovered{
+    background-color: darken($primary, 8%);
+}
+
+@import "../node_modules/bulma/bulma.sass";

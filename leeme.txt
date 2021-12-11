@@ -1,0 +1,23 @@
+Sara Vecino García - UO264093
+
+Todos los documentos cuentan con un título (h1), navegación (nav) y un footer indicando los créditos de los iconos y el fondo de la web.
+A los html se les aplica un css llamado "comun.css" que define las fuentes tipográficas, los colores de la web, el estilo de la navegación
+y el fondo de la página. Para la navegación utilizo flexbox.
+
+index.html: En este fichero hablo sobre mí, mi información académica, profesional y como contactarme. Cada apartado está representado por 
+una sección siendo la primera de ellas distinta por tener una imagen.
+ -> grid.css: Este documento css se aplica a index.html para dar un estilo específico a la primera sección. 
+    Para esto se utiliza el selector de pseudoclase "first-of-type". En esta sección utilizo el layout grid.
+
+aficiones.html: En este documento hablo de tres de mis aficiones, cada una en una sección. Utilizo el flexbox layout para que los iconos 
+queden a la izquierda del título y texto. Utilizo en este caso un div para separar el texto de la imagen. En este documento añado un vídeo
+en la última sección.
+ -> flexbox.css: Este css es para aplicar el layout flexbox a las secciones.
+
+musica.html: En este documento represento en secciones mi música favorita. Cada sección es una época musical y tiene dos canciones.
+ -> cards.css: Este fichero es para darle el estilo de una card a cada sección.
+
+libros.html: El último documento html de la página web es sobre dos libros que recomiendo. Cada libro está en una sección, que tienen una 
+imagen con la portada y una tabla con la información del libro.
+ -> gridImage.css: Utilizo el grid layout para para colocar las secciones, lo que ayuda a que sea responsive ya que en un ordenador se ven 
+    de forma horizontal y en un móvil aparecerían uno encima del otro.

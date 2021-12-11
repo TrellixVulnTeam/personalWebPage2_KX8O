@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="buscar.js"></script>
+    <script src="hover.js"></script>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Libros - Sara Vecino García</title>
+</head>
+<body>
+    <nav class="navbar is-primary is-fixed-top" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger"  aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Página principal</a>
+                <a class="navbar-item" href="aficiones.html">Aficiones</a>
+                <a class="navbar-item" href="musica.html">Música</a>
+                <a class="navbar-item" href="libros.html">Libros</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item field">
+                    <div class="field has-addons">
+                        <div class="control">
+                          <input class="input buscar" type="text" placeholder="Buscar...">
+                        </div>
+                        <div class="control">
+                          <a class="button is-info has-text-dark buttonBuscar">
+                            Buscar
+                          </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header has-background-primary level py-5">
+        <h1 class="title is-1 has-text-white level-item has-text-centered">Libros</h1>
+    </header>
+    <main class="container">
+        <div class="columns is-desktop">
+            <section class="section column">
+                <h2 class="subtitle is-2">Yo, Julia</h2>
+                <img class="image" src="resources/yojulia.jpg" alt="Fotografía del libro Yo, Julia" width="124"/>
+                <table class="table">
+                        <tr>
+                            <th>Título</th>
+                            <td>Yo, Julia</td>
+                        </tr>
+                        <tr>
+                            <th>Autor</th>
+                            <td>Santiago Posteguillo</td>
+                        </tr>
+                        <tr>
+                            <th>Género</th>
+                            <td>Novela histórica</td>
+                        </tr>
+                </table>
+            </section>
+            <section class="section column">
+                <h2 class="subtitle is-2">Sombra y hueso</h2>
+                <img class="image" src="resources/sombrayhueso.jpg" alt="Fotografía del libro Sombra y Hueso" width="124"/>
+                <table class="table">
+                        <tr>
+                            <th>Título</th>
+                            <td>Sombra y hueso</td>
+                        </tr>
+                        <tr>
+                            <th>Autor</th>
+                            <td>Leigh Bardugo</td>
+                        </tr>
+                        <tr>
+                            <th>Género</th>
+                            <td>Fantasía</td>
+                        </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer class="footer has-background-info">
+        <h2 class="title is-2">Créditos</h2>
+        <p>Iconos de <strong><a class="has-text-danger" href="https://fontawesome.com/license">Font Awesome</a></strong></p>
+    </footer>
+</body>
+</html>
