@@ -17,7 +17,10 @@ $(document).ready(function(){
                 var result= fileDom.val();
              //  var result2= fileDom.$(":contains("+buscando+")");
                 console.log(result);
-              //  console.log(result2);
+                
+                $(data).ready(function(){
+                    console.log($("*:contains("+buscando+")"));
+                });
 
                 fileDom.find('h2').each(function(){
                     console.log($(this).text());
