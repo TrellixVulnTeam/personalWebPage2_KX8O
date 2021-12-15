@@ -35,7 +35,7 @@ a.is-hovered{
     background-color: darken($primary, 8%);
 }
 .hidden{
-    visibility: hidden;
+    display: none;
 }
 
 @import "../node_modules/bulma/bulma.sass";
