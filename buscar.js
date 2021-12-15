@@ -16,7 +16,6 @@ $(document).ready(function(){
                     html=$(result[i]).attr("name");
                 }
                 if(result[i].localName=="p"|| result[i].localName == "h1"|| result[i].localName == "h2"|| result[i].localName == "h3" || result[i].localName=="th"  || result[i].localName=="td"){
-                   console.log(result)
                     searches.push(result[i].innerHTML);
                     urls.push(html);
                 }
