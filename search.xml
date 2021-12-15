@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <htmls>
     <html name="index.html"> 
     <body>
@@ -453,4 +453,61 @@
         </footer>
     </body>
     </html>
+    <html name="mapa.html"> 
+        <body>
+            <nav class="navbar is-primary is-fixed-top" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger"  aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu has-background-primary">
+                    <div class="navbar-start">
+                        <a class="navbar-item has-text-white" href="index.html">Página principal</a>
+                        <a class="navbar-item has-text-white" href="aficiones.html">Aficiones</a>
+                        <a class="navbar-item has-text-white" href="musica.html">Música</a>
+                        <a class="navbar-item has-text-white" href="libros.html">Libros</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item field">
+                            <label class="hidden" for="buscar">Buscar:</label>
+                            <div class="field has-addons">
+                                <div class="control">
+                                  <input class="input buscar" name="buscar" id="buscar" type="text" placeholder="Buscar..."></input>
+                                </div>
+                                <div class="control">
+                                  <a class="button is-link has-text-dark buttonBuscar">
+                                    Buscar
+                                  </a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header class="header has-background-primary level py-5">
+                <h1 class="title is-1 level-item has-text-white has-text-centered">Mapa web</h1>
+            </header>
+            <main class="container">
+                <section class="section">
+                    <ul>
+                        <li><a class="has-text-danger" href="index.html">Página principal</a></li>
+                        <li><a class="has-text-danger" href="aficiones.html">Aficiones</a></li>
+                        <li><a class="has-text-danger" href="musica.html">Música</a></li>
+                        <li><a class="has-text-danger" href="libros.html">Libros</a></li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer has-background-info">
+                <h2 class="title is-2">Créditos</h2>
+                <p>Iconos de <strong><a class="has-text-danger" href="https://fontawesome.com/license">Font Awesome</a></strong></p>
+                <div class="level">
+                    <a class="level-item  has-background-info has-text-centered has-text-danger" href="mapa.html">Mapa Web</a>
+                </div>
+            </footer>
+        </body>
+        </html>
 </htmls>
