@@ -34,5 +34,8 @@ a.has-text-white:hover{
 a.is-hovered{
     background-color: darken($primary, 8%);
 }
+.hidden{
+    visibility: hidden;
+}
 
 @import "../node_modules/bulma/bulma.sass";

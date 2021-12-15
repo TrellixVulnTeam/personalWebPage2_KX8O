@@ -2,11 +2,13 @@ a:hover {
   text-decoration: underline; }
 
 a.has-text-white:hover {
-  background-color: #303235 !important;
-  color: #000000 !important; }
+  background-color: #2b2d2f !important; }
 
 a.is-hovered {
   background-color: #222325; }
+
+.hidden {
+  visibility: hidden; }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -6342,7 +6344,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .py-6 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
-
 .is-size-1 {
   font-size: 3rem !important; }
 
