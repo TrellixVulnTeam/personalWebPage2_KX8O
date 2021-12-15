@@ -6344,30 +6344,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .py-6 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
-
-.p-auto {
-  padding: auto !important; }
-
-.pt-auto {
-  padding-top: auto !important; }
-
-.pr-auto {
-  padding-right: auto !important; }
-
-.pb-auto {
-  padding-bottom: auto !important; }
-
-.pl-auto {
-  padding-left: auto !important; }
-
-.px-auto {
-  padding-left: auto !important;
-  padding-right: auto !important; }
-
-.py-auto {
-  padding-top: auto !important;
-  padding-bottom: auto !important; }
-
 .is-size-1 {
   font-size: 3rem !important; }
 
