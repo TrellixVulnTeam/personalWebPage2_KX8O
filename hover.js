@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         currenturl = i;
       }
   }
+  //Se añade la clase is-hovered al navbar item en el que se encuentre el usuario
   document.links[currenturl].classList.toggle('is-hovered');
 });
